@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from app import app
+from flask_cors import CORS
 import unittest
 
 class Test(unittest.TestCase):
