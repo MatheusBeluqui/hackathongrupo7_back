@@ -4,7 +4,7 @@ from flask import jsonify
 
 db_user = 'admin'
 db_password = 'admin_password'
-db_name = 'app-database'
+db_name = 'playlist'
 db_local_host = os.environ.get('DB_LOCAL_HOST')
 db_connection_name = 'projeto-7-404421:us-west1:app-database'
 
