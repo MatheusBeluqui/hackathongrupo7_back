@@ -22,7 +22,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install Requirements
-        run:  pip install flask pytest pytest-cov flask-wtf flask-cors
+        run:  pip install flask pytest pytest-cov flask-wtf flask-cors db
 
       - name: Unit Test
         run: |
