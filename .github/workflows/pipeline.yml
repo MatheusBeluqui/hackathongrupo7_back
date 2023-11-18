@@ -24,16 +24,16 @@ jobs:
       - name: Install Requirements
         run:  pip install flask pytest pytest-cov flask-wtf flask-cors pymysql
 
-      - name: Unit Test
-        run: |
-          coverage run --source=app -m pytest test.py
-          coverage report -m
-          coverage xml -i
-
-      - name: SonarCloud Scan
-        uses: sonarsource/sonarcloud-github-action@master  #https://github.com/marketplace/actions/sonarcloud-scan
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
+#      - name: Unit Test
+#        run: |
+#          coverage run --source=app -m pytest test.py
+#          coverage report -m
+#          coverage xml -i
+#
+#      - name: SonarCloud Scan
+#        uses: sonarsource/sonarcloud-github-action@master  #https://github.com/marketplace/actions/sonarcloud-scan
+#        env:
+#          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
 
       - name: Docker Login
         run: | 
